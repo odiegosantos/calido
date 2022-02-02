@@ -147,7 +147,7 @@ header.sticky {
   color: var(--TextColor-300);
 }
                       /*------------------------------ Responsive Menu ------------------------------*/
-                      /*------------------------------ Media Queries ------------------------------*/
+                      /*------------------------------ Media Queries --------------------------------*/
 @media (max-width: 991px) {
   .navigation {
     display: none;
