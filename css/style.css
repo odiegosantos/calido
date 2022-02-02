@@ -1,22 +1,25 @@
                       /*------------------------------ Variables ------------------------------*/
 :root {
-  --logoColor: #2183808f;
-  --logoColorHover: #005454;
+  --logoColor: #5B94FD;
+  --logoColorHover: #034EEC;
 
   --TextColor-050: #000;
   --TextColor-100: #FFF;
-  --TextColor-200: #2183808F;
-  --TextColor-300: #2183806F;
-  --TextColor-400: #2183802F;
+  --TextColor-200: #5B94FD9F;
+  --TextColor-300: #5B94FD6f;
+  --TextColor-400: #5B94FD2f;
   --TextColor-500: #0000008F;
+  --TextColor-600: #034EEC;
 
-  --transiton: 300ms ease-in-out; 
+  --transiton: 400ms ease-in-out; 
   --borderRadiusLink: 15px 0 10px 0;
-  --boxShadow--100: 2px 2px 0 #FFF;
+  --boxShadow-100: 2px 2px 0 #FFF;
   --boxShadow-200: 2px 2px 0 #000;
 
   --bgColor: linear-gradient(100deg, #2183801f, #2183808f);
-  --bgColorLinkHover: #218380;
+  --bgColorLinkHover: #034EEC;
+
+  --animationText: fadeInUp ease-in-out forwards;
 }
   * {
   margin: 0;
@@ -24,17 +27,18 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
   height: 100vh;
   font-family: sans-serif;
-  scroll-behavior: smooth;
   /* background: var(--bgColor); */
 }
                       /*------------------------------ Header ------------------------------*/
 .header {
   width: 100%;
+  padding: 0 15px 0 15px;
   display: flex;
   z-index: 10000;
   align-items: center;
@@ -52,18 +56,18 @@ body {
   transition: var(--transiton);
 }
 header.sticky {
-  background-color: #FFF;
+  background-color: #FFFFFF9F;
 }
 
                       /*------------------------------ Navigation ------------------------------*/
 .navigation {
-  width: 50%;
+  width: 40%;
 }
 .navigation__item {
   font-size: 1.5em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .navigation__item--link a {
   color: var(--TextColor-200);
@@ -73,7 +77,7 @@ header.sticky {
   transition: var(--transiton);
   background: var(--bgColorLinkHover);
   border-radius: var(--borderRadiusLink);
-  box-shadow: var(--boxShadow--100);
+  border-bottom: 2px solid #000;
 }
 
                       /*------------------------------ Section ------------------------------*/
@@ -83,10 +87,30 @@ header.sticky {
   width: 100%;
 }
 .section__message {
+  opacity: 0;
   font-size: 8em;
-  top: 100px;
   position: absolute;
-  color: var(--TextColor-500);
+  color: var(--TextColor-200);
+  text-shadow: 2px 2px 2px #FFF;
+  transform: translateY(3em);
+}
+.section__message:hover {
+  color: var(--TextColor-400);
+  text-shadow: 0 0 0;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.section__message--1 {
+  top: 100px;
+  animation: var(--animationText) 2s; 
+}
+.section__message--2 {
+  top: 250px;
+  animation: var(--animationText) 3s; 
+}
+.section__message--3 {
+  top: 400px;
+  animation: var(--animationText) 4s; 
 }
 .section__image {
   background-image: url('../image/bg-image-1.jpg');
@@ -96,8 +120,31 @@ header.sticky {
 }
 
                       /*------------------------------ Main ------------------------------*/
-.main {
-  background-color: yellow;
+.main__section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.main__section__item--1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+}
+.main__section__text--title {
+  font-size: 4em;
+  color: var(--TextColor-600);
+}
+.main__section__text--text--1 {
+  font-size: 3em;
+  color: var(--TextColor-200);
+}
+.main__section__text--text--2 {
+  font-size: 3em;
+  padding-top: 200px;
+  color: var(--TextColor-300);
 }
                       /*------------------------------ Responsive Menu ------------------------------*/
                       /*------------------------------ Media Queries ------------------------------*/
