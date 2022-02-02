@@ -5,9 +5,10 @@
 
   --TextColor-050: #000;
   --TextColor-100: #FFF;
-  --TextColor-200: #2183808f;
-  --TextColor-300: #2183806f;
-  --TextColor-400: #2183802f;
+  --TextColor-200: #2183808F;
+  --TextColor-300: #2183806F;
+  --TextColor-400: #2183802F;
+  --TextColor-500: #0000008F;
 
   --transiton: 300ms ease-in-out; 
   --borderRadiusLink: 15px 0 10px 0;
@@ -25,19 +26,20 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: sans-serif;
   scroll-behavior: smooth;
-  background: var(--bgColor);
+  /* background: var(--bgColor); */
 }
                       /*------------------------------ Header ------------------------------*/
 .header {
   width: 100%;
   display: flex;
-  z-index: 1000;
+  z-index: 10000;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 .header__logo {
   font-size: 3em;
@@ -48,6 +50,9 @@ body {
 .header__logo--link:hover {
   color: var(--logoColorHover);
   transition: var(--transiton);
+}
+header.sticky {
+  background-color: #FFF;
 }
 
                       /*------------------------------ Navigation ------------------------------*/
@@ -71,6 +76,29 @@ body {
   box-shadow: var(--boxShadow--100);
 }
 
+                      /*------------------------------ Section ------------------------------*/
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+.section__message {
+  font-size: 8em;
+  top: 100px;
+  position: absolute;
+  color: var(--TextColor-500);
+}
+.section__image {
+  background-image: url('../image/bg-image-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+                      /*------------------------------ Main ------------------------------*/
+.main {
+  background-color: yellow;
+}
                       /*------------------------------ Responsive Menu ------------------------------*/
                       /*------------------------------ Media Queries ------------------------------*/
 @media (max-width: 991px) {
