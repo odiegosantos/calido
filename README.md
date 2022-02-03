@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Calido" />
 
@@ -81,3 +82,7 @@ Made with :heart: by <a href="https://github.com/{{odiegosantos}}" target="_blan
 &#xa0;
 
 <a href="#top">Back to top</a>
+=======
+# calido
+My Personal Website
+>>>>>>> 33b7c500ad4fe07296fe82732d14a6e23613eba1
