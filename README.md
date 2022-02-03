@@ -1,2 +1,0 @@
-# calido
-My Personal Website
