@@ -82,11 +82,11 @@ header.sticky {
 
                       /*------------------------------ Section ------------------------------*/
 
-.section {
+.main {
   height: 100vh;
   width: 100%;
 }
-.section__message {
+.main__message {
   opacity: 0;
   font-size: 8em;
   position: absolute;
@@ -94,24 +94,24 @@ header.sticky {
   text-shadow: 2px 2px 2px #FFF;
   transform: translateY(3em);
 }
-.section__message:hover {
+.main__message:hover {
   color: var(--TextColor-400);
   text-shadow: 0 0 0;
   cursor: pointer;
 }
-.section__message--1 {
+.main__message--1 {
   top: 100px;
   animation: var(--animationText) 2s; 
 }
-.section__message--2 {
+.main__message--2 {
   top: 250px;
   animation: var(--animationText) 3s; 
 }
-.section__message--3 {
+.main__message--3 {
   top: 400px;
   animation: var(--animationText) 4s; 
 }
-.section__image {
+.main__image {
   background-image: url('../image/bg-image-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,27 +120,27 @@ header.sticky {
 }
 
                       /*------------------------------ Main ------------------------------*/
-.main__section {
+.section {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.main__section__image {
+.section__image {
   background-repeat: no-repeat;
 }
-.main__section__item--2 {
+.section__item--2 {
   text-align: center;
 }
-.main__section__text--title {
+.section__text--title {
   font-size: 4em;
   color: var(--TextColor-600);
 }
-.main__section__text--1 {
+.section__text--1 {
   font-size: 3em;
   color: var(--TextColor-200);
 }
-.main__section__text--2 {
+.section__text--2 {
   font-size: 3em;
   padding-top: 200px;
   color: var(--TextColor-300);
