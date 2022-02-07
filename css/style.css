@@ -17,6 +17,7 @@
   --boxShadow-200: 2px 2px 0 #000;
 
   --bgColor: linear-gradient(100deg, #2183801f, #2183808f);
+  --bgColorFooter: #034EEC;
   --bgColorLinkHover: #034EEC;
 
   --animationText: fadeInUp ease-in-out forwards;
@@ -80,7 +81,7 @@ header.sticky {
   border-bottom: 2px solid #000;
 }
 
-                      /*------------------------------ Section ------------------------------*/
+                      /*------------------------------ Main ------------------------------*/
 
 .main {
   height: 100vh;
@@ -119,12 +120,13 @@ header.sticky {
   height: 100vh;
 }
 
-                      /*------------------------------ Main ------------------------------*/
+                      /*------------------------------ Section ------------------------------*/
 .section {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  overflow: auto;
 }
 .section__image {
   background-repeat: no-repeat;
@@ -145,6 +147,48 @@ header.sticky {
   padding-top: 200px;
   color: var(--TextColor-300);
 }
+
+                      /*------------------------------ Footer ------------------------------*/
+.footer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: var(--bgColorFooter);
+}
+.footer__image {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.footer__social {
+  color: #FFF;
+  font-size: 1em;
+}
+.footer__social--image:hover {
+  color: var(--TextColor-050);
+}
+.footer__social--image {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #FFF;
+}
+.footer__form--contact {
+  color: var(--TextColor-100);
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+.footer__form--contact:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+
+
                       /*------------------------------ Responsive Menu ------------------------------*/
                       /*------------------------------ Media Queries --------------------------------*/
 @media (max-width: 991px) {
