@@ -113,7 +113,7 @@ header.sticky {
   animation: var(--animationText) 4s; 
 }
 .main__image {
-  background-image: url('../image/bg-image-1.jpg');
+  background-image: url('../images/bg-image-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: inherit;
