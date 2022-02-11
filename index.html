@@ -11,14 +11,14 @@
 <body>
   <header class="header">
     <!-- Logo -->
-    <p class="header__logo" id="home">
+    <p class="header__logo">
       <a href="#" class="header__logo--link">Calido</a> <!-- Link Logo -->
     </p>
     <div class="menuToggle" onclick="toggleMenu();"></div> <!-- Responsive Menu -->
     <!-- Navigation -->
     <nav class="navigation">
       <ul class="navigation__item">
-        <li class="navigation__item--link"><a href="#home" onclick="toggleMenu();">Home</a>
+        <li class="navigation__item--link"><a href="#" onclick="toggleMenu();">Home</a>
         <li class="navigation__item--link"><a href="#projetos" onclick="toggleMenu();">Projetos</a></li>
         <li class="navigation__item--link"><a href="#mais" onclick="toggleMenu();">Saiba Mais</a></li>
         <li class="navigation__item--link"><a href="#contato" onclick="toggleMenu();">Contato</a></li>
@@ -69,18 +69,28 @@
     <div class="footer_form">
       <a href="https://api.whatsapp.com/send?phone=" target="_blank" rel="noopener noreferrer">
         <p class="footer__form--contact">
-          <img src="images/whatsapp.png" alt="Logo WatsApp">
+          <img src="images/whatsapp.png" alt="Logo WhatsApp">&nbsp;
           Telefone: (19) 123456789
         </p>
       </a>
       <a href="mailto:example@gmail.com" target="_blank" rel="noopener noreferrer">
         <p class="footer__form--contact">
-          <img src="images/email.png" alt="Logo Email">
+          <img src="images/email.png" alt="Logo Email">&nbsp;
           Email: example@gmail.com
+        </p>
+      </a>
+      <a href="https://www.google.com.br/maps/search/s%C3%A3o+paulo/@-23.5463431,-46.6759341,12.83z"
+        target="_blank noopener noreferrer">
+        <p class="footer__form--contact">
+          <img src="images/map.png" alt="Logo Mapa">&nbsp;
+          São Paulo, SP
         </p>
       </a>
     </div>
   </footer>
+  <div class="credits">
+    <p>CALIDO <span>2022 Todos os Direitos Reservados</span></p>
+  </div>
   <script src="js/script.js"></script>
 
   <!-- Photo License-->
