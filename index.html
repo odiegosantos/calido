@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>CALIDO</title>
+  <title>Calido Web Design - Sites e Lojas Virtuais</title>
 </head>
 
 <body>
   <header class="header">
-    <!-- Logo -->
-    <p class="header__logo">
-      <a href="#" class="header__logo--link">Calido</a> <!-- Link Logo -->
-    </p>
-    <div class="menuToggle" onclick="toggleMenu();"></div> <!-- Responsive Menu -->
-    <!-- Navigation -->
+
+    <h1 class="header__logo">
+      <a href="#" class="header__logo--link">Calido</a>
+    </h1>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
     <nav class="navigation">
       <ul class="navigation__item">
         <li class="navigation__item--link"><a href="#" onclick="toggleMenu();">Home</a>
-        <li class="navigation__item--link"><a href="#projetos" onclick="toggleMenu();">Projetos</a></li>
-        <li class="navigation__item--link"><a href="#mais" onclick="toggleMenu();">Saiba Mais</a></li>
+        <li class="navigation__item--link"><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
+        <li class="navigation__item--link"><a href="#projetos" onclick="toggleMenu();">Por que</a></li>
+        <li class="navigation__item--link"><a href="#mais" onclick="toggleMenu();">Mais</a></li>
         <li class="navigation__item--link"><a href="#contato" onclick="toggleMenu();">Contato</a></li>
       </ul>
     </nav>
@@ -32,24 +32,41 @@
     <div class="main__image">
     </div>
   </main>
+  <section class="section" id="sobre">
+    <div class="section__item--2">
+      <h2 class="section__text--title">Nossa Empresa</h2>
+      <h2 class="section__text--1">Lorem ipsum dolor sit amet consectetur.<br />
+        Lorem ipsum dolor sit amet consectetur.<br />
+        <span>Lorem ipsum, dolor sit amet consectetur.<br />
+          Lorem ipsum dolor sit amet consectetur.<br />
+          Lorem ipsum dolor sit amet consectetur<br />
+          Lorem ipsum dolor sit amet consectetur.
+        </span>
+      </h2>
+      <a class="section__button" href="#contato">Saiba Mais</a>
+    </div>
+    <div class="section__image">
+      <img src="images/Allura-Standing-3.png" alt="Avatar">
+    </div>
+  </section>
   <section class="section" id="projetos">
     <div class="section__image">
       <img src="images/Allura-Standing-1.png" alt="Avatar">
     </div>
     <div class="section__item--2">
-      <h1 class="section__text--title">O Mundo Está nas Suas Mãos</h1>
-      <p class="section__text--1">Mostre Seu Trabalho, Sua Arte, Sua Loja!</p>
-      <button class="section__button">Faça um Website!</button>
+      <h2 class="section__text--title">Lorem ipsum dolor sit amet.</h2>
+      <h2 class="section__text--1">Lorem ipsum dolor sit amet.</h2>
+      <a class="section__button" href="#contato">Saiba Mais</a>
     </div>
   </section>
   <section class="section" id="mais">
     <div class="section__image">
-      <img src="images/Allura-Standing-2.png" alt="Avatar">
+      <img src="images/Allura-Phone.png" alt="Avatar">
     </div>
     <div class="section__item--2">
-      <h1 class="section__text--title">Vamos Mudar o Mundo!</h1>
-      <p class="section__text--1">Comece aos Poucos, Encontre Seu Caminho!</p>
-      <button class="section__button">Faça Diferente</button>
+      <h2 class="section__text--title">Lorem, ipsum.</h2>
+      <h2 class="section__text--1">Lorem ipsum dolor sit amet</h2>
+      <a class="section__button" href="#contato">Saiba Mais</a>
     </div>
   </section>
 
@@ -59,7 +76,7 @@
     </div>
     <div class="footer__social">
       <h2>Redes Sociais</h2>
-      <a href="https://www.instagram.com/example/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/" target="blank" rel="noopener noreferrer">
         <p class="footer__social--image">
           <img src="images/instagram.png" alt="Logo Instagram">
           Instagram
@@ -67,20 +84,24 @@
       </a>
     </div>
     <div class="footer_form">
-      <a href="https://api.whatsapp.com/send?phone=" target="_blank" rel="noopener noreferrer">
+      <p class="footer__form--contact">
+        <img src="images/person.png" alt="Logo Person">&nbsp;
+        Diego Santos
+      </p>
+      <a href="https://api.whatsapp.com/send?phone=" target="blank" rel="noopener noreferrer">
         <p class="footer__form--contact">
           <img src="images/whatsapp.png" alt="Logo WhatsApp">&nbsp;
-          Telefone: (19) 123456789
+          Telefone: (11) 90000 0000
         </p>
       </a>
-      <a href="mailto:example@gmail.com" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:calidosite@gmail.com" target="blank" rel="noopener noreferrer">
         <p class="footer__form--contact">
           <img src="images/email.png" alt="Logo Email">&nbsp;
           Email: example@gmail.com
         </p>
       </a>
-      <a href="https://www.google.com.br/maps/search/s%C3%A3o+paulo/@-23.5463431,-46.6759341,12.83z"
-        target="_blank noopener noreferrer">
+      <a href="https://www.google.combr//maps/search/s%C3%A3o+paulo/@-23.5463431,-46.6759341,12.83z"
+        target="blank noopener noreferrer">
         <p class="footer__form--contact">
           <img src="images/map.png" alt="Logo Mapa">&nbsp;
           São Paulo, SP
@@ -89,13 +110,13 @@
     </div>
   </footer>
   <div class="credits">
-    <p>CALIDO <span>2022 Todos os Direitos Reservados</span></p>
+    <h3>CALIDO <span>2022 Todos os Direitos Reservados</span></h3>
   </div>
   <script src="js/script.js"></script>
 
   <!-- Photo License-->
   <!-- https://blush.design/license -->
-  <!-- <a href="https://www.flaticon.com/br/icones-gratis/instagram">Instagram- Flaticon</a> -->
+  <!-- <a href="https://www.flaticon.combr//icones-gratis/instagram">Instagram- Flaticon</a> -->
 </body>
 
 </html>
