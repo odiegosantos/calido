@@ -28,8 +28,7 @@
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{odiegosantos}}" target="_blank">Author</a>
+  <a href="#checkered_flag-starting">Starting</a> &#xa0;
 </p>
 
 <br>
@@ -42,7 +41,7 @@ My personal website under construction
 
 :heavy_check_mark: Feature 1;\
 :heavy_check_mark: Feature 2;\
-➕ Feature 3;
+:heavy_check_mark: Feature 3;
 
 ## :rocket: Technologies ##
 
