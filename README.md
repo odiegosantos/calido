@@ -15,13 +15,7 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{odiegosantos}}/calido?color=56BEB8" /> -->
 </p>
 
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  Calido 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
+![bg-calido-site](https://user-images.githubusercontent.com/87211192/153865110-ac53465c-d913-449e-8645-9164acc717ab.png)
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -35,7 +29,7 @@
 
 ## :dart: About ##
 
-My personal website under construction
+My personal website
 
 ## :sparkles: Features ##
 
