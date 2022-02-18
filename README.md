@@ -43,7 +43,6 @@ The following tools were used in this project:
 
 - [HTML](https://www.w3.org/standards/webdesign/htmlcss)
 - [CSS](https://www.w3.org/standards/webdesign/htmlcss)
-- [Bem CSS](http://getbem.com/)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## :white_check_mark: Requirements ##
