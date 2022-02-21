@@ -7,22 +7,23 @@
   --textColor-200: #5B94FD9F;
   --textColor-300: #5B94FD6f;
   --textColor-400: #5B94FD2f;
-  --textColor-500: #0000008F;
-  --textColor-600: #034EEC;
-  --textShadow-100: 2px 2px 2px #FFF;
-
-  --transiton: 400ms ease-in-out; 
+  --textColor-500: #034EEC;
+  --textColor-600: #0000008F;
+  
   --borderRadiusLink: 15px 0 10px 0;
+
   --boxShadow-100: 2px 2px 0 #FFF;
   --boxShadow-200: 2px 2px 0 #000;
-  --boxShadow-300: 2px 2px 10px blue;
-
+  --boxShadow-300: 2px 2px 10px #0000ff;
+  --textShadow-100: 2px 2px 2px #FFF;
+  
   --bgColor: #034EEC;
   --bgColorLinkHover: #034EEC;
-
+  
   --bgButton: #5B94Fd;
   --bgButtonHover: #034EEC;
-
+  
+  --transiton: 400ms ease-in-out; 
   --animationText: fadeInUp ease-in-out forwards;
 }
   * {
@@ -91,7 +92,7 @@ header.sticky {
 .main__message {
   position: absolute;
   font-size: 6rem;
-  color: var(--textColor-600);
+  color: var(--textColor-500);
   text-shadow: var(--textShadow--100);
   transform: translateY(3em);
   opacity: 0;
@@ -133,18 +134,18 @@ header.sticky {
 .section__image {
   background-repeat: no-repeat;
 }
-.section__item--2 {
+.section__item {
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.section__text--title {
+.section__title {
   padding-bottom: 1rem;
   font-size: 3rem;
-  color: var(--textColor-600);
+  color: var(--textColor-500);
 }
-.section__text--1 {
+.section__text {
   text-align: left;
   font-size: 2rem;
   color: var(--textColor-200);
@@ -185,22 +186,14 @@ header.sticky {
   color: var(--textColor-100);
   font-size: 1rem;
 }
-.footer__social--image:hover {
-  color: var(--textColor-050);
-}
-.footer__social--image {
-  color: var(--textColor-100);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.footer__form--contact {
+
+.footer__icon {
   color: var(--textColor-100);
   font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
-.footer__form--contact:hover {
+.footer__icon:hover {
   color: #000;
   cursor: pointer;
 }
@@ -262,12 +255,12 @@ header.sticky {
   .section__image {
     display: none;
   }
-  .section__text--1 {
+  .section__text {
     text-align: center;
     margin: 0 2rem;
     padding: 4rem 0;
   }
-  .section__text--1 span {
+  .section__text span {
     display: none;
   }
   .section__button {
