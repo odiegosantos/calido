@@ -110,10 +110,6 @@ header.sticky {
   top: 20rem;
   animation: var(--animationText) 3s; 
 }
-.main__message--3 {
-  top: 30rem;
-  animation: var(--animationText) 4s; 
-}
 .main__image {
   position: inherit;
   height: 100vh;
@@ -190,6 +186,7 @@ header.sticky {
 .footer__icon {
   color: var(--textColor-100);
   font-size: 1.2rem;
+  margin-top: .5rem;
   display: flex;
   align-items: center;
 }
