@@ -204,11 +204,11 @@ header.sticky {
     width: 30px;
     height: 30px;
     margin: 1rem 0;
-    background-image: url('../images/menu-open.png');
+    background-image: url('../icon/menu-open.png');
     background-repeat: no-repeat;
   }
   .menuToggle.active {
-    background-image: url('../images/menu-close.png');
+    background-image: url('../icon/menu-close.png');
   }
   .navigation.active {
     position: fixed;
@@ -273,4 +273,16 @@ header.sticky {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* animated session with javascript */
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-2rem, 0, 0);
+  transition: .6s;
+}
+
+.js .js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
