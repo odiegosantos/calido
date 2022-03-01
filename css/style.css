@@ -1,38 +1,51 @@
 :root {
-  --logoColor: #5B94FD;
-  --logoColorHover: #034EEC;
+  --logoColor: #5b94fd;
+  --logoColorHover: #034ecc;
 
   --textColor-050: #000;
-  --textColor-100: #FFF;
-  --textColor-200: #5B94FD9F;
-  --textColor-300: #5B94FD6f;
-  --textColor-400: #5B94FD2f;
-  --textColor-500: #034EEC;
-  --textColor-600: #0000008F;
+  --textColor-100: #fff;
+  --textColor-200: #5b94fd9F;
+  --textColor-300: #5b94fd6f;
+  --textColor-400: #5b94fd2f;
+  --textColor-500: #034ecc;
+  --textColor-600: #0000008f;
   
   --borderRadiusLink: 15px 0 10px 0;
 
-  --boxShadow-100: 2px 2px 0 #FFF;
+  --boxShadow-100: 2px 2px 0 #fff;
   --boxShadow-200: 2px 2px 0 #000;
   --boxShadow-300: 2px 2px 10px #0000ff;
-  --textShadow-100: 2px 2px 2px #FFF;
+  --textShadow-100: 2px 2px 2px #fff;
   
-  --bgColor: #034EEC;
-  --bgColorLinkHover: #034EEC;
+  --bgColor: #034ecc;
+  --bgColorLinkHover: #034ecc;
   
-  --bgButton: #5B94Fd;
-  --bgButtonHover: #034EEC;
+  --bgButton: #5b94fd;
+  --bgButtonHover: #034ecc;
   
   --transiton: 400ms ease-in-out; 
   --animationText: fadeInUp ease-in-out forwards;
 }
-  * {
+* {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--bgColor);
+  border-radius: 5rem;
 }
 a {
   color: var(--textColor-100);
@@ -41,7 +54,6 @@ body {
   width: 100%;
   height: 100vh;
   font-family: sans-serif;
-  /* background: var(--bgColor); */
 }
 .header {
   position: fixed;
@@ -63,9 +75,10 @@ body {
   transition: var(--transiton);
 }
 header.sticky {
-  background-color: #FFFFFF9F;
+  background-color: #fff;
 }
 
+/* -- Navigation -- */
 .navigation {
   width: 40%;
 }
@@ -85,6 +98,7 @@ header.sticky {
   transition: var(--transiton);
 }
 
+/* -- Main -- */
 .main {
   width: 100%;
   height: 100vh;
@@ -119,6 +133,7 @@ header.sticky {
   background-attachment: fill;
 }
 
+/* -- Section -- */
 .section {
   height: 100%;
   display: flex;
@@ -164,6 +179,7 @@ header.sticky {
   box-shadow: var(--boxShadow-300);
 }
 
+/* -- Footer -- */
 .footer {
   height: 100vh;
   display: flex;
@@ -182,7 +198,6 @@ header.sticky {
   color: var(--textColor-100);
   font-size: 1rem;
 }
-
 .footer__icon {
   color: var(--textColor-100);
   font-size: 1.2rem;
@@ -199,6 +214,7 @@ header.sticky {
   background-color: var(--bgColor);
 }
 
+/* -- Media -- */
 @media (max-width: 991px) {
   .menuToggle {
     width: 30px;
@@ -268,6 +284,7 @@ header.sticky {
   }
 }
 
+/* -- Keyframes -- */
 @keyframes fadeInUp {
   to {
     opacity: 1;
